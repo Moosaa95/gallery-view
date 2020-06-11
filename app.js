@@ -18,5 +18,17 @@ function imgClicked(e){
 
     //remving class fades
     setTimeout(() => current.classList.remove('fade-in'), 500);
-    e.target.style.opacity = opacity
+    e.target.style.opacity = opacity;
+
+    
+    
 }
+btn.addEventListener('click', function(){
+    const bg = ['#fff', 'red', 'pink', 'black', '#545', '#767'];
+    const marh = Math.floor(Math.random() * bg.length) ;
+
+
+    document.querySelector('body').style.backgroundColor = bg[marh];
+    
+    
+});
